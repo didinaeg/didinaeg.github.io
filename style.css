@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Cabecera */
@@ -79,7 +79,7 @@ body {
     max-width: 80%;
     gap: 35px;
     height: 90%;
-
+    min-height: 85vh;
 }
 
 .column {
@@ -194,7 +194,7 @@ body {
     padding-left: 30px;
 }
 #sMsg {
-    background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-110.gif);
+    /* background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-110.gif); */
     color: #ffb0f5;
 }
 
@@ -255,7 +255,9 @@ audio::-webkit-media-controls-panel {
     margin-bottom: 20px;
 }
 
-
+.abme {
+    text-align: center;
+}
 
 /* Friends */
 .fwiendFace {
@@ -349,6 +351,10 @@ table {
   table * {
     font-family: system-ui;
     text-shadow: none;
+  }
+  table tbody {
+    flex-direction: row;
+    display: flex;
   }
   table caption {
     font-size: 1.5em;
