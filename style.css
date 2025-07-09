@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+* {
+    cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol317.cur), auto !important;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url("bg_47.gif");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Cabecera */
+.header {
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.header .top {
+    display: grid;
+
+    background: #B36CBD;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: calc(100% - 15px);
+    height: 22px;
+    padding: 5px;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    padding-top: 6px;
+    overflow: hidden;
+}
+
+.header .top form {
+    justify-self: center;
+    margin: 0;
+}
+
+.header .bottom {
+    background: #F99EED;
+    color: rgb(255, 255, 255);
+    font-size: small;
+    margin: 0px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-left: 10px;
+    padding-top: 4px;
+    position: fixed;
+    left: 0;
+    top: 34px;
+    width: calc(100% - 15px);
+    color: #000;
+    height: 15px;
+}
+
+/* Estructura */
+.contenedor {
+    font-family: 'EB Garamond', serif;
+    text-shadow: 0px 0px 5px #daf7d2;
+    color: white;
+
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: row;
+    min-width: 75%;
+    max-width: 80%;
+    gap: 35px;
+    height: 90%;
+
+}
+
+.column {
+    padding: 10px;
+    background: #000;
+    border: 1px double;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    width: 100%;
+}
+
+.column-left {
+    flex: 40%;
+}
+
+.column-right {
+    flex: 60%;
+    overflow-y: auto;
+}
+
+/* Scrollbar */
+.column-right::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ffffff00;
+}
+
+.column-right::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    background-color: #ffffff00;
+}
+
+.column-right::-webkit-scrollbar-thumb {
+    z-index: 10;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes blinkingTextViolet {
+    0% {
+        color: black;
+    }
+
+    49% {
+        color: violet;
+    }
+
+    50% {
+        color: violet;
+    }
+
+    99% {
+        color: violet;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.title-name {
+    animation: blinkingTextViolet 0.3s infinite;
+}
+
+/* Perfil (left) */
+.profile {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.contact {
+
+    border: 1px double;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+
+    margin-bottom: 20px;
+}
+
+.contact-head {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border: 0px solid;
+    border-bottom: 1px double;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-links {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 150px;
+
+    padding-bottom: 10px;
+}
+
+.contact-links a {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.boxButton {
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+#sMsg {
+    background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-110.gif);
+    color: #ffb0f5;
+}
+
+#block {
+    background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-41.gif);
+    color: #ffb0f5;
+}
+
+#report {
+    background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-161.gif);
+    color: #ffb0f5
+}
+
+#add {
+    background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-51.gif);
+    color: #ffb0f5
+}
+
+.player::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 276px;
+    background-size: contain;
+    background-image: url(hoffy.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+audio,
+audio::-webkit-media-controls,
+audio::-webkit-media-controls-enclosure,
+audio::-webkit-media-controls-panel {
+    background: rgb(143 143 143);
+    color: #000;
+    outline: none;
+    margin-bottom: -3px;
+    width: 100%;
+    height: 36px;
+    filter: none;
+}
+
+/* Apartados (right) */
+.box {
+    border: none;
+    overflow: hidden;
+}
+
+/* About me */
+.extended {
+    text-align: center;
+    border: 1px double;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+
+
+/* Friends */
+.fwiendFace {
+    max-width: 25%;
+    display: inline-grid;
+    width: calc(24% - 6px);
+    padding: 3px;
+    text-align: center;
+}
+
+.fwiendFace img {
+    border: 2px solid #e6e6e6;
+    border-radius: 50%;
+    background-position: center;
+    display: absolute;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: calc(50% - 50px);
+}
+
+.bio {
+    border: 1px double;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.bio-head {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px solid;
+    border-bottom: 1px double;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.bio-body {
+    padding: 12px;
+    
+}
+
+.bio-body-main {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.view-more, .view-more * {
+    color: pink;
+}
+.friends {
+    border: 1px double;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.friends-head {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px solid;
+    border-bottom: 1px double;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.friends-body {
+
+    padding: 12px;
+}
+
+
+
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  table * {
+    font-family: system-ui;
+    text-shadow: none;
+  }
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+    text-shadow: none;
+    color: white;
+  }
+  
+  table tr {
+    background-color: #ffffff00;
+    border: 0px solid #ffffff00;
+    padding: .35em;
+  }
+  
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+
+  
+  
