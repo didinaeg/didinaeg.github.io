@@ -194,10 +194,13 @@ body {
     padding-left: 30px;
 }
 #sMsg {
-    /* background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-110.gif); */
+     background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-110.gif); */
     color: #ffb0f5;
 }
+#tmmr {
 
+   color: #ffb0f5;
+}
 #block {
     background-image: url(https://cutekawaiiresources.files.wordpress.com/2016/11/hello-kitty-bullet-41.gif);
     color: #ffb0f5;
